@@ -5682,14 +5682,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .banner__content.right {
-    right: 3rem;
-    left: auto;
-    text-align: center
+        left: 1rem;
+    right: auto;
+    text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
     .banner__content.right {
-        right:5rem
+        right:37rem
     }
 }
 
@@ -5742,7 +5742,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .banner__content--title__inner {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    background: #fff;
 }
 
 .banner__content--price {
