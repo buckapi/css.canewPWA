@@ -28,22 +28,22 @@ export class DataApiService {
 		  "Content-Type":"application/json"	
 	});
 	getTransationByBranch(branch: string){
-		const url_api = `https://db.corpcssca.com:1010/api/transactions?filter[where][idBranch]=${branch}`;
+		const url_api = `https://db.corpcssca.com:1003/api/transactions?filter[where][idBranch]=${branch}`;
 		this.transactions = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
 
 	getAllTransactions(){
-		const url_api = 'https://db.corpcssca.com:1010/api/transactions';
+		const url_api = 'https://db.corpcssca.com:1003/api/transactions';
 		return this.http.get(url_api);
 	}
 	getProduct(id: string){
-		const url_api = `https://db.corpcssca.com:1010/api/products/${id}`;
+		const url_api = `https://db.corpcssca.com:1003/api/products/${id}`;
 		return this.http.get(url_api);
 	}
 
 	getCierresByBranch(branch: string){
-		const url_api = `https://db.corpcssca.com:1010/api/infos?filter[where][idBranch]=${branch}`;
+		const url_api = `https://db.corpcssca.com:1003/api/infos?filter[where][idBranch]=${branch}`;
 		this.cierre = this.http.get(url_api);
 		return ( this.http.get(url_api));		
 	}
@@ -54,7 +54,7 @@ export class DataApiService {
 		return ( this.http.get(url_api));		
 	}
 	getSerialT(branch: string){
-		const url_api = `https://db.corpcssca.com:1010/api/branchs/${branch}`;
+		const url_api = `https://db.corpcssca.com:1003/api/branchs/${branch}`;
 		this.branch = this.http.get(url_api);
 		this.butler.serialT=this.branch.serialT;
 		return ( this.branch);		
@@ -67,7 +67,7 @@ export class DataApiService {
 	// }
 setSerialT(serial:SerialInterface, branch: string){
 		// let token = this.authService.getToken();
-		const url_api = `https://db.corpcssca.com:1010/api/branchs/${branch}`;
+		const url_api = `https://db.corpcssca.com:1003/api/branchs/${branch}`;
 		return this.http
 		.put<SerialInterface>(url_api, serial)
 		.pipe(map(data => data));
@@ -75,7 +75,7 @@ setSerialT(serial:SerialInterface, branch: string){
 
 
 	saveTicket(ticket :TicketInterface){
-		const url_api='https://db.corpcssca.com:1010/api/transactions';
+		const url_api='https://db.corpcssca.com:1003/api/transactions';
 		return this.http
 		.post<TicketInterface>(url_api, ticket)
 		.pipe(map(data => data));
