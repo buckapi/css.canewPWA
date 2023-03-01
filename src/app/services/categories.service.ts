@@ -2,31 +2,81 @@ import {Category} from 'src/app/interfaces/category';
 
 export const CATEGORIES: Category[] = [
     {
-    name:'Accesorios',
+    name:'ACCESORIOS',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
     idCategory:'ca000001'
   }, 
   {
-    name:'Herramientas',
+    name:'AMPERIMETRO',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
     idCategory:'ca000002'
   },
     {
-    name:'Hogar',
+    name:'ARRANQUES',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
     idCategory:'ca000003'
   },
    {
-    name:'Tecnología',
+    name:'BOBINAS',
     images:[
       'assets/assetsdash/images/profile/profile.png'
     ],
     idCategory:'ca000004'
-  }  
+  },
+
+  {
+    name:'BOMBAS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+    name:'FILTROS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+    name:'MODULOS',
+    images:[
+      'assets/assetsdash/images/profile/profile.png'
+    ],
+    idCategory:'ca000004'
+  },
+  {
+   name:'REP MOTOR',
+   images:[
+     'assets/assetsdash/images/profile/profile.png'
+   ],
+   idCategory:'ca000004'
+ },
+ {
+  name:'PARTES ELECTRICAS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+},
+{
+  name:'VALVULAS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+},
+{
+  name:'REPUESTOS',
+  images:[
+    'assets/assetsdash/images/profile/profile.png'
+  ],
+  idCategory:'ca000004'
+} 
 ];
