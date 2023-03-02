@@ -1,7 +1,7 @@
 @charset "UTF-8";:root {
-    --primary-color: #1a3a6d;
-    --secondary-color: #ED1D24;
-    --foreground-color: #084298;
+    --primary-color: #000;
+    --secondary-color: #ffc107;
+    --foreground-color: #000;
     --foreground-sub-color: #898686;
     --body-text-color: #000000;
     --text-white-color: #fff;
@@ -894,7 +894,8 @@ select {
 }
 
 .bg__primary {
-    background: var(--primary-color)
+    background: var(--primary-color);
+    padding-bottom: 10px;
 }
 
 .bg__secondary {
@@ -3439,13 +3440,13 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 @media only screen and (min-width: 992px) {
     .hero__slider--ml {
-        margin-left:255px
+        margin-left:80px
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .hero__slider--ml {
-        margin-left:280px
+        margin-left:80px
     }
 }
 
@@ -3468,7 +3469,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .slider__maintitle {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     margin-bottom: 1.5rem
 }
 
@@ -3493,7 +3494,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .slider__maintitle--inner__text {
     font-family: var(--rubik-fonts);
     font-weight: 400;
-    text-decoration: underline
+    /* text-decoration: underline */
 }
 
 @media only screen and (min-width: 992px) {
@@ -5030,7 +5031,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .product__card--price {
     -webkit-transition: var(--transition);
-    transition: var(--transition)
+    transition: var(--transition);
+    font-weight: 700;
+    font: icon;
 }
 
 .product__badge {
@@ -5059,14 +5062,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .current__price {
-    color: var(--secondary-color);
+    color: #6c757d;
     font-weight: 600;
     line-height: 1.8rem;
     font-family: var(--inter-fonts)
 }
 
 .old__price {
-    color: var(--foreground-sub-color);
+    color: #6c757d;
     margin-left: .8rem;
     line-height: 1.8rem;
     font-family: var(--inter-fonts)
@@ -5680,14 +5683,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .banner__content.right {
-    right: 3rem;
-    left: auto;
-    text-align: center
+        left: 1rem;
+    right: auto;
+    text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
     .banner__content.right {
-        right:5rem
+        right:37rem
     }
 }
 
@@ -5740,7 +5743,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .banner__content--title__inner {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    background: #fff;
 }
 
 .banner__content--price {
@@ -13040,3 +13044,21 @@ details>summary::-webkit-details-marker {
         font-size:1.6rem
     }
 }
+
+.whatsapp {
+    position:fixed;
+    width:45px;
+    height:45px;
+    bottom: 2px;
+      right: 18px;
+    background-color:#25d366;
+    color:#fff;
+    border-radius:50%;
+    text-align:center;
+    font-size:45px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:15px;
+  }
