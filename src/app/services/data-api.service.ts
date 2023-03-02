@@ -29,7 +29,7 @@ export class DataApiService {
 	});
 	getTransationByBranch(branch: string){
 		const url_api = `https://db.corpcssca.com:1003/api/transactions?filter[where][idBranch]=${branch}`;
-		this.transactions = this.http.get(url_api);
+		this.transactions = this.http.get(url_api);-
 		return ( this.http.get(url_api));		
 	}
 
