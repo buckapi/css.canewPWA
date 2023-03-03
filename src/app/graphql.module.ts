@@ -29,10 +29,10 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
               uri: 'https://db.corpcssca.com:4001',
             }),
           },
-          openimport: /* <-- these settings will be saved by name: newClientName */ {
+          cssca: /* <-- these settings will be saved by name: newClientName */ {
             cache: new InMemoryCache(),
             link: httpLink.create({
-              uri: 'https://db.corpcssca.com:4004',
+              uri: 'https://db.corpcssca.com:4000',
             }),
           },
         };
